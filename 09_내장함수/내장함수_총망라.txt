@@ -1,0 +1,53 @@
+1. 수치 연산 함수
+
+abs( val ) : 절댓값
+
+divmod ( var1, var2 ) : var1/var2의 몫과 나머지 튜플 객체 반환
+
+pow( var1, var2 ) : var1 ** var2의 결과 반환
+
+
+2. 시퀸스형/반복 가능한 자료형을 다루는 함수
+
+all( list/tuple/set/dict/str ) : 모든 항목이 True면 True 반환 (and)
+
+any( list/tuple/set/dict/str ) : 하나라도 True면 True 반환 (or)
+
+enumerate( list/tuple/str ) : 인덱스를 포함하는 튜플 객체 항목의 enumerate 객체 반환
+
+filter( func/lambda, list/tuple/set ) : 조건 해당 항목 걸러내는 필터 객체로 반환하는 함수
+
+list()/tuple()/set()/dict( enumerate ) : 리스트/튜플/셋/딕셔너리로 변환해 반환하는 함수
+
+map( func/lambda, list/tuple/set ) : 각 항목에 대해 함수/람다 적용한 결과를 맵 객체로 반환하는 함수
+
+max()/min() : 가장 큰/작은 값 반환
+
+range( start, end, increase ) : 시작/종료/증감치 값으로 시퀸스형 객체 생성
+
+sorted() : 정렬된 리스트를 생성해 반환
+
+zip( 둘 이상의 list/tuple/set ) : 동일 위치의 항목을 묶어 튜플 항목으로 구성하는 zip 객체 생성
+
+
+3. 변환 함수
+
+chr()/ord()/hex() : 유니코드→문자 반환/문자→유니코드 반환/16진수 반환
+
+int( var, var진수(생략가능) )/float()/str() : 숫자 문자열, 실수→정수 반환/숫자 문자열, 정수→실수 반환/문자열 반환
+
+
+4. 객체 조사를 위한 함수
+
+dir( object ) : 객체o→속성 정보를 리스트 객체로 반환/객체x→지역 스코프 정보를 리스트 객체로 반환
+
+globals()/locals() : 전역/지역 심볼 테이블을 딕셔너리로 반환
+
+id( object ) : 고유 주소(참조값) 반환
+
+isinstance()/issubclass() : 첫 번째 인자 객체가 두 번째 인자 클래스의 인스턴스/섭클래스인지 여부를 bool로 반환
+
+
+5. 실행 관련 함수
+
+eval( str ) : 문자열의 표현식을 실행한 결과값 반환

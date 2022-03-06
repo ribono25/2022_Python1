@@ -1,0 +1,4 @@
+data = 'ADCBBBBCABBCBDACBDCAACDDDCAABABDBCBCBDBDBDDABBAAAAAAADADBDBCBDABADCADC'
+
+ans = sum(list(map(lambda x:69-ord(x), data)))
+print(ans)
